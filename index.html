@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <title>Colorado's Tallest Peaks</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1>Colorado's Ten Tallest Peaks</h1>
+    <div id="sort">
+        <label for="sortSelect">Sort List By:</label>
+        <select id="sortSelect">
+            <option value="elevation">Elevation</option>
+            <option value="name">Name</option>
+            <option value="range">Moutain Range</option>
+            <option value="nearestTown">Nearest Town</option>
+        </select>
+    </div>
+    <div id="table">
+        <table id="infoTable">
+            <thead>
+              <tr>
+                <th>Elevation Rank</th>
+                <th>Name</th>
+                <th>Elevation</th>
+                <th>Moutain Range</th>
+                <th>Nearest Town</th>
+                <th>Climbed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- You'll populate this with the JSON data -->
+            </tbody>
+          </table>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

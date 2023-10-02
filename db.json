@@ -1,0 +1,34 @@
+{
+    "colorado14ers": [
+      {
+        "id": 1,
+        "name": "Mount Elbert",
+        "elevation": "14,438'",
+        "elevationRank": "1",
+        "range": "Sawatch Range",
+        "nearestTown": "Leadville",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mt._Elbert.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 2,
+        "name": "Mount Massive",
+        "elevation": "14,427'",
+        "elevationRank": "2",
+        "range": "Sawatch Range",
+        "nearestTown": "Leadville",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Massive.jpg/1200px-Mount_Massive.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 3,
+        "name": "Mount Harvard",
+        "elevation": "14,424'",
+        "elevationRank": "3",
+        "range": "Sawatch Range",
+        "nearestTown": "Granite",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg/408px-Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg",
+        "climbed": ""
+      }
+    ]
+}

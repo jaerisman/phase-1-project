@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+
+  td:first-child {
+    width: 80px; 
+  }
+
+  label {
+    padding-bottom: 8px;
+  }
+
+  #sortSelect {
+    margin-bottom: 8px;
+  }
