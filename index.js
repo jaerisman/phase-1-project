@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
             });
             infoTable.appendChild(tableBody);
             
+            
             //Add event listener for sorting table by dropdown menu selection
             const sortSelect = document.getElementById('sortSelect');
             sortSelect.addEventListener('change', function(){
