@@ -44,6 +44,20 @@ document.addEventListener("DOMContentLoaded", function(){
             sortSelect.addEventListener('change', function(){
                 const sortBy = sortSelect.value;
 
+                data.sort((a, b) => {
+                    if (a[sortBy] < b[sortBy]) {
+                        return -1;
+                    }
+                    if (a[sortBy] > b[sortBy]) {
+                        return 1;
+                    }
+                    return 0;
+                });
+
+                while (tableBody.firstChild){
+
+                }
+
             })
         });
-});
+})
