@@ -2,18 +2,22 @@ document.addEventListener("DOMContentLoaded", function(){
     fetch('http://localhost:3000/colorado14ers')
         .then(response => response.json())
         .then(data => {
-            //Declare global variables
+            // Add 'checked' property to each data item
+            data.forEach((item) => {
+                item.checked = false;
+            });
+
             const infoTable = document.getElementById('infoTable');
             const tableBody = document.createElement('tbody');
             let currentPopupContainer = null;
+            let checkboxes = null;
 
-            //Function to populate table with JSON data
             const populateTable = function(data) {
                 while (tableBody.firstChild) {
                     tableBody.firstChild.remove();
                 }
 
-                data.forEach(peak => {
+                data.forEach((peak, index) => {
                     const row = document.createElement('tr');
 
                     const elevationRankCell = document.createElement('td');
@@ -24,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     const link = document.createElement('a');
                     link.textContent = peak.name;
                     link.href = "#";
-            
-            //Event listener to show picture of peak when user clicks on name                   
+
                     link.addEventListener('click', function(event){
                         event.preventDefault();
                         openPopupPhoto(peak.imgUrl, peak.name);
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     const climbedCell = document.createElement('td');
                     const checkbox = document.createElement('input');
                     checkbox.type = 'checkbox';
+                    checkbox.checked = peak.checked;
                     climbedCell.appendChild(checkbox);
                     row.appendChild(climbedCell);
 
@@ -55,18 +59,47 @@ document.addEventListener("DOMContentLoaded", function(){
                 });
 
                 infoTable.appendChild(tableBody);
+
+                checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                const climbedPeaksList = document.getElementById('climbedPeaksList');
+                climbedPeaksList.classList.add('climbedPeaksList');
+
+                const climbedListCreator = function(){
+                    const climbedPeaks = [];
+
+                    checkboxes.forEach((checkbox, index) => {
+                        if (checkbox.checked) {
+                            data[index].checked = true;
+                            climbedPeaks.push(data[index]);
+                        } else {
+                            data[index].checked = false;
+                        }
+                    });
+
+                    climbedPeaksList.innerText = '';
+
+                    climbedPeaks.forEach((peak) => {
+                        const listElement = document.createElement('li');
+                        listElement.textContent = peak.name;
+                        climbedPeaksList.appendChild(listElement); 
+                    });
+                };
+
+                checkboxes.forEach((checkbox) => {
+                    checkbox.addEventListener('change', climbedListCreator);
+                });
+
             };
             populateTable(data);
-            
-            //Function to open popup of peak photo
+
             const openPopupPhoto = function(imgUrl, peakName){
                 if (currentPopupContainer){
                     closePopupPhoto();
                 }
-                
+
                 const popupContainer = document.createElement('div');
                 popupContainer.classList.add('popupContainer')
-                
+
                 const popupContent = document.createElement('div');
                 popupContent.classList.add('popupContent');
 
@@ -96,16 +129,14 @@ document.addEventListener("DOMContentLoaded", function(){
                 currentPopupContainer = popupContainer;
             };
 
-            //Function to close popup of peak photo
             const closePopupPhoto = function(){
                 const popupContainer = document.querySelector('.popupContainer');
                 popupContainer.remove();
                 currentPopupContainer = null;
-            }
-            
-            //Event listener for sorting table by dropdown menu selection
+            };
+
             const sortSelect = document.getElementById('sortSelect');
-            
+
             const tableSorter = function(){
                 const sortBy = sortSelect.value;
 
@@ -124,34 +155,13 @@ document.addEventListener("DOMContentLoaded", function(){
                     }
                     return 0;
                 });
+
+                checkboxes.forEach((checkbox, index) => {
+                    checkbox.checked = data[index].checked;
+                });
+
                 populateTable(data); 
             };    
             sortSelect.addEventListener('change', tableSorter);
-
-            //Add event listener to create list of climbed mountains
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            const climbedPeaksList = document.getElementById('climbedPeaksList');
-            climbedPeaksList.classList.add('climbedPeaksList');
-
-            const climbedListCreator = function(){
-                const climbedPeaks = [];
-
-                checkboxes.forEach((checkbox, index) => {
-                    if (checkbox.checked) {
-                        climbedPeaks.push(data[index]);
-                    } 
-                });
-                
-                climbedPeaksList.innerText = '';
-                
-                climbedPeaks.forEach(peak => {
-                    const listElement = document.createElement('li');
-                    listElement.textContent = peak.name;
-                    climbedPeaksList.appendChild(listElement); 
-                });
-            }
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', climbedListCreator);
-            });
         });
 });
