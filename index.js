@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function(){
             
             //Add event listener for sorting table by dropdown menu selection
             const sortSelect = document.getElementById('sortSelect');
-            sortSelect.addEventListener('change', function(){
+            
+            const tableSorter = function(){
                 const sortBy = sortSelect.value;
 
                 if (sortBy === "elevationDescending") {
@@ -59,16 +60,41 @@ document.addEventListener("DOMContentLoaded", function(){
                     data.sort((a,b) => parseInt(a.elevation.replace(/,/g, "")) - parseInt(b.elevation.replace(/,/g, "")));
                 }
 
-                    data.sort((a, b) => {
-                        if (a[sortBy] < b[sortBy]) {
-                            return -1;
-                        }
-                        if (a[sortBy] > b[sortBy]) {
-                            return 1;
-                        }
-                        return 0;
-                    });
+                data.sort((a, b) => {
+                    if (a[sortBy] < b[sortBy]) {
+                        return -1;
+                    }
+                    if (a[sortBy] > b[sortBy]) {
+                        return 1;
+                    }
+                    return 0;
+                });
                 populateTable(data); 
-            });    
-        });
+            };    
+            sortSelect.addEventListener('change', tableSorter);
+
+            //Add event listener to create list of climbed mountains
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const climbedListCreator = function(){
+                const climbedPeaks = [];
+
+                checkboxes.forEach((checkbox, index) => {
+                    if (checkbox.checked) {
+                        climbedPeaks.push(data[index]);
+                    } 
+                });
+                
+                const climbedPeaksList = document.getElementById('climbedPeaksList');
+                climbedPeaksList.innerText = '';
+                
+                climbedPeaks.forEach(peak => {
+                    const listElement = document.createElement('li');
+                    listElement.textContent = peak.name;
+                    climbedPeaksList.appendChild(listElement); 
+                });
+            }
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', climbedListCreator);
+            });
+    });
 });
