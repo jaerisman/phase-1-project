@@ -6,7 +6,7 @@ h1, h3 {
 table {
     border-collapse: collapse;
     margin-left: 10px;
-    background-color: rgba(77, 198, 238, 0.5);
+    background-color: rgba(77, 198, 238, 0.8);
   }
   
 th, td {
@@ -50,6 +50,52 @@ body:before {
     z-index: -1;
   }
 
-li {
+popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popupContent {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popupContent img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.climbedPeaksList {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: square;
+    margin-right: 5px;
 }
