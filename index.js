@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 popupContent.classList.add('popupContent');
 
                 const closeButton = document.createElement('span');
-                closeButton.textContent = 'X';
+                closeButton.textContent = '✖';
                 closeButton.classList.add('closeButton');
                 closeButton.addEventListener('click', closePopupPhoto);
 
