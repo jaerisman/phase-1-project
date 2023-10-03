@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
             //Event listener to show picture of peak when user clicks on name                   
                     link.addEventListener('click', function(event){
                         event.preventDefault();
-                        openPopupPhoto(peak.imgUrl);
+                        openPopupPhoto(peak.imgUrl, peak.name);
                     });
                     nameCell.appendChild(link);
                     row.appendChild(nameCell);
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
             populateTable(data);
             
             //Function to open popup of peak photo
-            const openPopupPhoto = function(imgUrl){
+            const openPopupPhoto = function(imgUrl, peakName){
                 if (currentPopupContainer){
                     closePopupPhoto();
                 }
@@ -79,8 +79,17 @@ document.addEventListener("DOMContentLoaded", function(){
                 image.src = imgUrl;
                 image.alt = 'Peak Image';
 
+                const caption = document.createElement('p');
+                caption.textContent = peakName;
+                caption.classList.add('caption');
+
+                const captionContainer = document.createElement('div');
+                captionContainer.classList.add('captionContainer');
+                captionContainer.appendChild(image);
+                captionContainer.appendChild(caption);
+
                 popupContent.appendChild(closeButton);
-                popupContent.appendChild(image);
+                popupContent.appendChild(captionContainer);
                 popupContainer.appendChild(popupContent);
                 document.body.appendChild(popupContainer);
 
