@@ -1,4 +1,4 @@
-h1 {
+h1, h3 {
     margin-left: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -6,13 +6,13 @@ h1 {
 table {
     border-collapse: collapse;
     margin-left: 10px;
-    background-color: rgba(71, 221, 151, 0.2);
+    background-color: rgba(77, 198, 238, 0.5);
   }
   
 th, td {
     border: 1px solid black;
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
@@ -49,3 +49,7 @@ body:before {
     opacity: 0.3; 
     z-index: -1;
   }
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
