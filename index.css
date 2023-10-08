@@ -1,5 +1,12 @@
-h1, h3 {
+h1 {
     margin-left: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -37,7 +44,7 @@ label {
 
 body:before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,7 +59,7 @@ body:before {
 
 .popupContent {
     position: relative;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(128, 128, 128, 1.0);
     padding: 10px;
     box-sizing: border-box;
     border-radius: 4px;
@@ -89,4 +96,5 @@ body:before {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style-type: square;
     margin-right: 5px;
+    margin-top: 5px;
 }
