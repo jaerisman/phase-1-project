@@ -29,6 +29,76 @@
         "nearestTown": "Granite",
         "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg/408px-Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg",
         "climbed": ""
+      },
+      {
+        "id": 4,
+        "name": "Blanca Peak",
+        "elevation": "14,350'",
+        "elevationRank": "4",
+        "range": "Sangre de Cristo Range",
+        "nearestTown": "Fort Garland",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MtBlancaEast.jpg/1280px-MtBlancaEast.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 5,
+        "name": "La Plata Peak",
+        "elevation": "14,344'",
+        "elevationRank": "5",
+        "range": "Sawatch Range",
+        "nearestTown": "Twin Lakes",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2007-06-24-plata-eve-close2.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 6,
+        "name": "Uncompahgre Peak",
+        "elevation": "14,318'",
+        "elevationRank": "6",
+        "range": "San Juan Range",
+        "nearestTown": "Lake City",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uncompahgre_peak.jpg/1280px-Uncompahgre_peak.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 7,
+        "name": "Crestone Peak",
+        "elevation": "14,299'",
+        "elevationRank": "7",
+        "range": "Sangre de Cristo Range",
+        "nearestTown": "Crestone",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Crestone_peak_2.jpg/1280px-Crestone_peak_2.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 8,
+        "name": "Mount Lincoln",
+        "elevation": "14,293'",
+        "elevationRank": "8",
+        "range": "Mosquito Range",
+        "nearestTown": "Alma",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mount_Lincoln_Colorado_July_2016.jpg/1280px-Mount_Lincoln_Colorado_July_2016.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 9,
+        "name": "Grays Peak",
+        "elevation": "14,275'",
+        "elevationRank": "9",
+        "range": "Front Range",
+        "nearestTown": "Bakerville",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grays_and_Torreys_Peaks_2006-08-06.jpg",
+        "climbed": ""
+      },
+      {
+        "id": 10,
+        "name": "Castle Peak",
+        "elevation": "14,274'",
+        "elevationRank": "10",
+        "range": "Elk Range",
+        "nearestTown": "Ashcroft",
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Castle_Peak_CO_Full.JPG/1280px-Castle_Peak_CO_Full.JPG",
+        "climbed": ""
       }
     ]
 }
