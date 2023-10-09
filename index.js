@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", function(){
                 item.checked = false;
             });
 
+            //Declare global variables
             const infoTable = document.getElementById('infoTable');
             const tableBody = document.createElement('tbody');
             let currentPopupContainer = null;
             let checkboxes = null;
 
+            //Populate table with JSON data
             const populateTable = function(data) {
                 while (tableBody.firstChild) {
                     tableBody.firstChild.remove();
@@ -29,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     link.textContent = peak.name;
                     link.href = "#";
 
+                    //Event listener shows photo of peak when name is clicked
                     link.addEventListener('click', function(event){
                         event.preventDefault();
                         openPopupPhoto(peak.imgUrl, peak.name);
@@ -90,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 });
 
             };
-            populateTable(data);
+            populateTable(data); 
 
             const openPopupPhoto = function(imgUrl, peakName){
                 if (currentPopupContainer){
@@ -143,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 if (sortBy === "elevationDescending") {
                     data.sort((a, b) => parseInt(b.elevation.replace(/,/g, "")) - parseInt(a.elevation.replace(/,/, "")));
                 } else if (sortBy === "elevationAscending") {
-                    data.sort((a,b) => parseInt(a.elevation.replace(/,/g, "")) - parseInt(b.elevation.replace(/,/g, "")));
+                    data.sort((a, b) => parseInt(a.elevation.replace(/,/g, "")) - parseInt(b.elevation.replace(/,/g, "")));
                 }
 
                 data.sort((a, b) => {
