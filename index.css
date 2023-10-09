@@ -4,9 +4,9 @@ h1 {
 }
 
 h3 {
-    margin-left: 10px;
+    padding-left: 10px;
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -40,6 +40,14 @@ label {
     margin-bottom: 20px;
     margin-left: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    padding-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
 
 body:before {
