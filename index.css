@@ -30,6 +30,10 @@ td:first-child {
     width: 80px; 
 }
 
+td:last-child {
+    text-align: center;
+}
+
 label {
     padding-left: 10px;
     padding-bottom: 8px;
@@ -98,6 +102,7 @@ body:before {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     margin: 0px;
+    padding-left: 0px;
 }
 
 .climbedPeaksList {
