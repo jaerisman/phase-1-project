@@ -73,9 +73,7 @@ body:before {
     position: relative;
     background-color: rgba(128, 128, 128, 1.0);
     padding: 10px;
-    box-sizing: border-box;
     border-radius: 4px;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
