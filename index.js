@@ -11,6 +11,8 @@ fetchData();
 //Declare global variables
 const infoTable = document.getElementById('infoTable');
 const tableBody = document.createElement('tbody');
+const sortSelect = document.getElementById('sortSelect');
+const searchInput = document.getElementById('searchInput');
 let currentPopupContainer = null;
 
 //Populate table with JSON data
@@ -56,7 +58,6 @@ const populateTable = function(data) {
     infoTable.appendChild(tableBody);
 };
 
-//Function to open popup image of each peak
 const openPopupPhoto = function(imgUrl, peakName){
     if (currentPopupContainer){
         closePopupPhoto();
@@ -94,14 +95,11 @@ const openPopupPhoto = function(imgUrl, peakName){
     currentPopupContainer = popupContainer;
 };
 
-//Function to close popup image of each peak
 const closePopupPhoto = function(){
     const popupContainer = document.querySelector('.popupContainer');
     popupContainer.remove();
     currentPopupContainer = null;
 };
-
-const sortSelect = document.getElementById('sortSelect');
 
 const tableSorter = function(){
     const sortBy = sortSelect.value;
@@ -125,9 +123,10 @@ const tableSorter = function(){
     populateTable(data); 
 };    
 
+sortSelect.addEventListener('change', tableSorter);
+
 const tableSearch = function() {
-    const searchInput = document.getElementById('searchInput');
-    const searchQuery = searchInput.value.toLowerCase();
+    const searchQuery = searchInput.value.toLowerCase().trim();
     
     const filteredData = data.filter((peak) => {
         const match = peak.name.toLowerCase().includes(searchQuery);
@@ -137,4 +136,3 @@ const tableSearch = function() {
 };
 
 searchInput.addEventListener('input', tableSearch);
-sortSelect.addEventListener('change', tableSorter);
