@@ -1,4 +1,4 @@
-# Phase 1 Project - Colorado's Ten Tallest Peaks
+# Colorado's Ten Tallest Peaks
 
 Colorado's Ten Tallest Peaks is a web application that displays information about Colorado's tallest peaks. It has the following interactive features: 
 
@@ -8,19 +8,17 @@ Colorado's Ten Tallest Peaks is a web application that displays information abou
 
 ## Examples of the application's features
 
-Here are examples of the application's features: 
+**Sorting the table according to differnt sort options:**
 
-Sorting the table according to differnt sort options
+<img src="sort-menu.gif" alt="Alt Text" width="400" height="320"><br> 
 
-<img src="sort-menu.gif" alt="Alt Text" width="375" height="300">
+**Selecting a checkbox to add the corresponding peak to the Climbed Peaks list:**
 
-Selecting a checkbox to add the corresponding peak to the Climbed Peaks list
+<img src="add-climbed-peaks.gif" alt="Alt Text" width="400" height="320"><br>  
 
-![Alt Text](path/to/animated.gif)
+**Clicking on a peak name to see a popup image of the peak:**
 
-Clicking on a peak name to see a popup image of the peak
-
-![Alt Text](path/to/animated.gif)
+<img src="popup-photos.gif" alt="Alt Text" width="400" height="320">
 
 ## Data Source
 
@@ -34,5 +32,18 @@ The application will then make a GET request to `http://localhost:3000/colorado1
 
 ## Credits
 
-The image URLs of each peak in the db.json file are from each peak's Wikipedia page. The background image of index.html was taken by the author of the application.  
+The background image of index.html was taken by the author of the application. The image URLs of each peak in the db.json file are from each peak's Wikipedia page.   
+
+Photo credits for image URLs in the db.json file:<br>  
+- Blanca Peak: <a href="https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg">Rick Kimpel, Jr.</a>, Public domain, via Wikimedia Commons
+- Castle Peak: <a href="https://commons.wikimedia.org/wiki/File:Castle_Peak_CO_Full.JPG">Dbunde</a>, Public domain, via Wikimedia Commons
+- Crestone Peak: <a href="https://commons.wikimedia.org/wiki/File:Crestone_peak_2.jpg">Adam Ginsburg</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>, via Wikimedia Commons
+- Grays Peak: <a href="https://commons.wikimedia.org/wiki/File:Grays_and_Torreys_Peaks_2006-08-06.jpg">Daidipya</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+- La Plata Peak: <a href="https://commons.wikimedia.org/wiki/File:2007-06-24-plata-eve-close2.jpg">Robertbody at English Wikipedia</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons
+- Mount Elbert: <a href="https://commons.wikimedia.org/wiki/File:Mt._Elbert.jpg">Hogs555</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+- Mount Harvard: <a href="https://commons.wikimedia.org/wiki/File:Mount_Harvard_(Colorado)_-_2006-07-16.jpg">jokermanj</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+- Mount Lincoln: <a href="https://commons.wikimedia.org/wiki/File:Mount_Lincoln_Colorado_July_2016.jpg">Thomson200</a>, CC0, via Wikimedia Commons
+- Mount Massive: <a href="https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg">Rick Kimpel, Jr.</a>, Public domain, via Wikimedia Commons
+- Uncompahgre Peak: <a href="https://commons.wikimedia.org/wiki/File:Uncompahgre_peak.jpg">Gregstoner88 at the English Wikipedia</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons
+
 
