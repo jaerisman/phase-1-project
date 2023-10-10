@@ -2,9 +2,9 @@
 
 Colorado's Ten Tallest Peaks is a web application that displays information about Colorado's tallest peaks. It has the following interactive features: 
 
-- Users can sort the information table according to the peaks' elevation (ascending or descending), name, mountain range, and nearest town. 
-- Users can select a checkbox next to each peak to indicate that they have climbed the peak, which will add the peak's name to a list of "Climbed Peaks" at the bottom of the page. 
-- Users can see a popup image of each peak (which were selected from each peak's Wikipedia page) by clicking on the name of the peak.
+- Users can sort the table according to the peaks' elevation (ascending or descending), name, mountain range, and nearest town. 
+- Users can search by peak name by entering text into the search bar, which will filter the table to display any peaks that include the search text. The search feature is case insensitive, so entering "peak" will display all peaks with "Peak" in their name.
+- Users can see a popup image of each peak by clicking on the name of the peak. Only one popup image will display at a time, so clicking on a second link will close the fist popup image and open the second one. 
 
 ## Examples of the application's features
 
@@ -12,9 +12,9 @@ Colorado's Ten Tallest Peaks is a web application that displays information abou
 
 <img src="sort-menu.gif" alt="Alt Text" width="400" height="320"><br> 
 
-**Selecting a checkbox to add the corresponding peak to the Climbed Peaks list:**
+**Searching the table by peak name:**
 
-<img src="add-climbed-peaks.gif" alt="Alt Text" width="400" height="320"><br>  
+<img src="search-peaks.gif" alt="Alt Text" width="400" height="320"><br>  
 
 **Clicking on a peak name to see a popup image of the peak:**
 
@@ -22,7 +22,7 @@ Colorado's Ten Tallest Peaks is a web application that displays information abou
 
 ## Data Source
 
-The application fetches data from its db.json file. With `json-server` installed globally, users can run the following command to run the pseudoserver: 
+The application fetches data from its db.json file. With `json-server` installed globally, users can run the following command to run the server: 
 
 ```console
 $ json-server --watch db.json
@@ -32,9 +32,9 @@ The application will then make a GET request to `http://localhost:3000/colorado1
 
 ## Credits
 
-The background image of index.html was taken by the author of the application. The image URLs of each peak in the db.json file are from each peak's Wikipedia page.   
+The background image of the index.html file was taken by the author of the application. The image URLs of each peak in the db.json file are from each peak's Wikipedia page.   
 
-Photo credits for image URLs in the db.json file:<br>  
+Here are photo credits for image URLs in the db.json file:<br>  
 - Blanca Peak: <a href="https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg">Rick Kimpel, Jr.</a>, Public domain, via Wikimedia Commons
 - Castle Peak: <a href="https://commons.wikimedia.org/wiki/File:Castle_Peak_CO_Full.JPG">Dbunde</a>, Public domain, via Wikimedia Commons
 - Crestone Peak: <a href="https://commons.wikimedia.org/wiki/File:Crestone_peak_2.jpg">Adam Ginsburg</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>, via Wikimedia Commons
