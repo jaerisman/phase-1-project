@@ -19,6 +19,11 @@
             <option value="nearestTown">Nearest Town (Alphabetical)</option>
         </select>
     </div>
+    
+    <div id="search">
+      <label for="searchInput">Search By Peak Name:</label>
+      <input type="text" id="searchInput" placeholder="Enter peak name...">
+    </div>
 
     <div id="popupContainer"></div>
 
@@ -31,19 +36,13 @@
                 <th>Elevation</th>
                 <th>Moutain Range</th>
                 <th>Nearest Town</th>
-                <th>Climbed</th>
               </tr>
             </thead>
         </table>
     </div>
 
     <div id="popupExplainer">
-      <p>*Click Peak Name to View Popup Image</p>
-    </div>
-
-    <div>
-      <h3>Climbed Peaks:</h3>
-      <ul id="climbedPeaksList"></ul>
+      <p>*Click Peak Name to View a Popup Image of the Peak</p>
     </div>
 
     <script src="index.js"></script>
