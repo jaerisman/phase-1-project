@@ -7,8 +7,7 @@
         "elevationRank": "1",
         "range": "Sawatch Range",
         "nearestTown": "Leadville",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mt._Elbert.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mt._Elbert.jpg"
       },
       {
         "id": 2,
@@ -17,8 +16,7 @@
         "elevationRank": "2",
         "range": "Sawatch Range",
         "nearestTown": "Leadville",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Massive.jpg/1200px-Mount_Massive.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Mount_Massive.jpg/1200px-Mount_Massive.jpg"
       },
       {
         "id": 3,
@@ -27,8 +25,7 @@
         "elevationRank": "3",
         "range": "Sawatch Range",
         "nearestTown": "Granite",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg/408px-Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mount_Harvard_%28Colorado%29_-_2006-07-16.jpg"
       },
       {
         "id": 4,
@@ -37,8 +34,7 @@
         "elevationRank": "4",
         "range": "Sangre de Cristo Range",
         "nearestTown": "Fort Garland",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MtBlancaEast.jpg/1280px-MtBlancaEast.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/MtBlancaEast.jpg/1280px-MtBlancaEast.jpg"
       },
       {
         "id": 5,
@@ -47,8 +43,7 @@
         "elevationRank": "5",
         "range": "Sawatch Range",
         "nearestTown": "Twin Lakes",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2007-06-24-plata-eve-close2.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/2007-06-24-plata-eve-close2.jpg"
       },
       {
         "id": 6,
@@ -57,8 +52,7 @@
         "elevationRank": "6",
         "range": "San Juan Range",
         "nearestTown": "Lake City",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uncompahgre_peak.jpg/1280px-Uncompahgre_peak.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uncompahgre_peak.jpg/1280px-Uncompahgre_peak.jpg"
       },
       {
         "id": 7,
@@ -67,8 +61,7 @@
         "elevationRank": "7",
         "range": "Sangre de Cristo Range",
         "nearestTown": "Crestone",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Crestone_peak_2.jpg/1280px-Crestone_peak_2.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Crestone_peak_2.jpg/1280px-Crestone_peak_2.jpg"
       },
       {
         "id": 8,
@@ -77,8 +70,7 @@
         "elevationRank": "8",
         "range": "Mosquito Range",
         "nearestTown": "Alma",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mount_Lincoln_Colorado_July_2016.jpg/1280px-Mount_Lincoln_Colorado_July_2016.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mount_Lincoln_Colorado_July_2016.jpg/1280px-Mount_Lincoln_Colorado_July_2016.jpg"
       },
       {
         "id": 9,
@@ -87,8 +79,7 @@
         "elevationRank": "9",
         "range": "Front Range",
         "nearestTown": "Bakerville",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grays_and_Torreys_Peaks_2006-08-06.jpg",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grays_and_Torreys_Peaks_2006-08-06.jpg"
       },
       {
         "id": 10,
@@ -97,8 +88,7 @@
         "elevationRank": "10",
         "range": "Elk Range",
         "nearestTown": "Ashcroft",
-        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Castle_Peak_CO_Full.JPG/1280px-Castle_Peak_CO_Full.JPG",
-        "climbed": ""
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Castle_Peak_CO_Full.JPG/1280px-Castle_Peak_CO_Full.JPG"
       }
     ]
 }
