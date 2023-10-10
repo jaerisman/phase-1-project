@@ -6,7 +6,7 @@ h1 {
 h3 {
     padding-left: 10px;
     margin-bottom: 0px;
-    margin-top: 15px;
+    margin-top: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,7 +19,7 @@ table {
 th, td {
     border: 1px solid black;
     padding-left: 8px;
-    padding-right: 15px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
@@ -30,10 +30,6 @@ td:first-child {
     width: 80px; 
 }
 
-td:last-child {
-    text-align: center;
-}
-
 label {
     padding-left: 10px;
     padding-bottom: 8px;
@@ -42,6 +38,16 @@ label {
 
 #sortSelect {
     margin-bottom: 20px;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search {
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#searchInput {
     margin-left: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -80,7 +86,6 @@ body:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    flex-direction: column;
 }
 
 .popupContent img {
@@ -101,11 +106,4 @@ body:before {
     font-style: italic;
     margin: 0px;
     padding-left: 0px;
-}
-
-.climbedPeaksList {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    list-style-type: square;
-    margin-right: 5px;
-    margin-top: 5px;
 }
