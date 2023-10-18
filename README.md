@@ -32,7 +32,7 @@ The application will then make a GET request to `http://localhost:3000/colorado1
 
 ## Credits
 
-The background image of the index.html file was taken by the author of the application. The image URLs of each peak in the db.json file are from each peak's Wikipedia page.   
+The background image of the index.html file was taken by the application's author. The image URLs of each peak in the db.json file are from each peak's Wikipedia page.   
 
 Here are photo credits for image URLs in the db.json file:<br>  
 - Blanca Peak: <a href="https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg">Rick Kimpel, Jr.</a>, Public domain, via Wikimedia Commons
@@ -46,4 +46,11 @@ Here are photo credits for image URLs in the db.json file:<br>
 - Mount Massive: <a href="https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg">Rick Kimpel, Jr.</a>, Public domain, via Wikimedia Commons
 - Uncompahgre Peak: <a href="https://commons.wikimedia.org/wiki/File:Uncompahgre_peak.jpg">Gregstoner88 at the English Wikipedia</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons
 
+The following MDN Web Documents were also referenced in the making of this application: 
 
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">MDN Web Docs: Element: classList property</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">MDN Web Docs: EventTarget: addEventListener() method</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/fetch">MDN Web Docs: fetch() global function</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json">MDN Web Docs: Response: json() method</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">MDN Web Docs: Promise.prototype.then()</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim">MDN Web Docs: String.prototype.trim()</a>
