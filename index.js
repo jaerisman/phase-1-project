@@ -102,7 +102,6 @@ const closePopupPhoto = function(){
 
 const tableSorter = function(){
     const sortBy = sortSelect.value;
-    console.log(data);
     if (sortBy === "elevationDescending") {
         data.sort((a, b) => parseInt(b.elevation.replace(/,/g, "")) - parseInt(a.elevation.replace(/,/, "")));
     } else if (sortBy === "elevationAscending") {
