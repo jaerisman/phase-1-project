@@ -29,7 +29,6 @@ const populateTable = function(data) {
         nameLink.textContent = peak.name;
         nameLink.href = "#";
 
-        //Event listener shows photo of peak when name is clicked
         nameLink.addEventListener('click', function(event){
             event.preventDefault();
             openPopupPhoto(peak.imgUrl, peak.name);
