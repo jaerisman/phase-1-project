@@ -11,9 +11,6 @@ fetchData();
 
 const infoTable = document.getElementById('infoTable');
 const tableBody = document.createElement('tbody');
-const sortSelect = document.getElementById('sortSelect');
-const searchInput = document.getElementById('searchInput');
-let currentPopupContainer = null;
 
 const populateTable = function(data) {
     while (tableBody.firstChild) {
@@ -56,6 +53,8 @@ const populateTable = function(data) {
     });
     infoTable.appendChild(tableBody);
 };
+
+let currentPopupContainer = null;
 
 const openPopupPhoto = function(imgUrl, peakName){
     if (currentPopupContainer){
@@ -100,6 +99,8 @@ const closePopupPhoto = function(){
     currentPopupContainer = null;
 };
 
+const sortSelect = document.getElementById('sortSelect');
+
 const tableSorter = function(){
     const sortBy = sortSelect.value;
     if (sortBy === "elevationDescending") {
@@ -109,6 +110,8 @@ const tableSorter = function(){
     };
 
     data.sort((a, b) => {
+        console.log(a)
+        console.log(b)
         if (a[sortBy] < b[sortBy]) {
             return -1;
         }
@@ -122,6 +125,8 @@ const tableSorter = function(){
 };    
 
 sortSelect.addEventListener('change', tableSorter);
+
+const searchInput = document.getElementById('searchInput');
 
 const tableSearch = function() {
     const searchQuery = searchInput.value.toLowerCase().trim();
