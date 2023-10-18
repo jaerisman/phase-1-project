@@ -54,5 +54,6 @@ The following MDN Web Documents were also referenced in the making of this appli
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt">MDN Web Docs: parseInt()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">MDN Web Docs: Promise.prototype.then()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response/json">MDN Web Docs: Response: json() method</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace">MDN Web Docs: String.prototype.replace()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim">MDN Web Docs: String.prototype.trim()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">MDN Web Docs: The Anchor element</a>
