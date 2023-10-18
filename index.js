@@ -1,25 +1,24 @@
-const fetchData = function() {fetch('http://localhost:3000/colorado14ers')
+const fetchData = function() {
+    fetch('http://localhost:3000/colorado14ers')
     .then(response => response.json())
     .then(fetchedData => {
         data = fetchedData;
         populateTable(data);
     });
-}
+};
 
 fetchData();
 
-//Declare global variables
 const infoTable = document.getElementById('infoTable');
 const tableBody = document.createElement('tbody');
 const sortSelect = document.getElementById('sortSelect');
 const searchInput = document.getElementById('searchInput');
 let currentPopupContainer = null;
 
-//Populate table with JSON data
 const populateTable = function(data) {
     while (tableBody.firstChild) {
         tableBody.firstChild.remove();
-    }
+    };
 
     data.forEach((peak) => {
         const row = document.createElement('tr');
@@ -29,16 +28,16 @@ const populateTable = function(data) {
         row.appendChild(elevationRankCell);
 
         const nameCell = document.createElement('td');
-        const link = document.createElement('a');
-        link.textContent = peak.name;
-        link.href = "#";
+        const nameLink = document.createElement('a');
+        nameLink.textContent = peak.name;
+        nameLink.href = "#";
 
         //Event listener shows photo of peak when name is clicked
-        link.addEventListener('click', function(event){
+        nameLink.addEventListener('click', function(event){
             event.preventDefault();
             openPopupPhoto(peak.imgUrl, peak.name);
         });
-        nameCell.appendChild(link);
+        nameCell.appendChild(nameLink);
         row.appendChild(nameCell);
 
         const elevationCell = document.createElement('td');
@@ -61,7 +60,7 @@ const populateTable = function(data) {
 const openPopupPhoto = function(imgUrl, peakName){
     if (currentPopupContainer){
         closePopupPhoto();
-    }
+    };
 
     const popupContainer = document.createElement('div');
     popupContainer.classList.add('popupContainer')
@@ -70,7 +69,7 @@ const openPopupPhoto = function(imgUrl, peakName){
     popupContent.classList.add('popupContent');
 
     const closeButton = document.createElement('span');
-    closeButton.textContent = '✖';
+    closeButton.textContent = 'X';
     closeButton.classList.add('closeButton');
     closeButton.addEventListener('click', closePopupPhoto);
 
@@ -103,12 +102,12 @@ const closePopupPhoto = function(){
 
 const tableSorter = function(){
     const sortBy = sortSelect.value;
-
+    console.log(data);
     if (sortBy === "elevationDescending") {
         data.sort((a, b) => parseInt(b.elevation.replace(/,/g, "")) - parseInt(a.elevation.replace(/,/, "")));
     } else if (sortBy === "elevationAscending") {
         data.sort((a, b) => parseInt(a.elevation.replace(/,/g, "")) - parseInt(b.elevation.replace(/,/g, "")));
-    }
+    };
 
     data.sort((a, b) => {
         if (a[sortBy] < b[sortBy]) {
