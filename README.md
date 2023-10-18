@@ -30,7 +30,7 @@ $ json-server --watch db.json
 
 The application will then make a GET request to `http://localhost:3000/colorado14ers` to fetch data from the db.json file each time the page refreshes. 
 
-## Credits
+## References
 
 The background image of the index.html file was taken by the application's author. The image URLs of each peak in the db.json file are from each peak's Wikipedia page.   
 
@@ -57,3 +57,4 @@ The following MDN Web Documents were also referenced in the making of this appli
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace">MDN Web Docs: String.prototype.replace()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim">MDN Web Docs: String.prototype.trim()</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">MDN Web Docs: The Anchor element</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">MDN Web Docs: The Document Body element</a>
