@@ -29,8 +29,7 @@ const populateTable = function(data) {
         nameLink.textContent = peak.name;
         nameLink.href = "#";
 
-        nameLink.addEventListener('click', function(event){
-            event.preventDefault();
+        nameLink.addEventListener('click', function(){
             openPopupPhoto(peak.imgUrl, peak.name);
         });
         nameCell.appendChild(nameLink);
@@ -102,15 +101,14 @@ const sortSelect = document.getElementById('sortSelect');
 
 const tableSorter = function(){
     const sortBy = sortSelect.value;
+
     if (sortBy === "elevationDescending") {
-        data.sort((a, b) => parseInt(b.elevation.replace(/,/g, "")) - parseInt(a.elevation.replace(/,/, "")));
+        data.sort((a, b) => parseInt(b.elevation.replace(/,/, "")) - parseInt(a.elevation.replace(/,/, "")));
     } else if (sortBy === "elevationAscending") {
-        data.sort((a, b) => parseInt(a.elevation.replace(/,/g, "")) - parseInt(b.elevation.replace(/,/g, "")));
+        data.sort((a, b) => parseInt(a.elevation.replace(/,/, "")) - parseInt(b.elevation.replace(/,/g, "")));
     };
 
     data.sort((a, b) => {
-        console.log(a)
-        console.log(b)
         if (a[sortBy] < b[sortBy]) {
             return -1;
         }
