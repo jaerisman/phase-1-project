@@ -127,11 +127,8 @@ const searchInput = document.getElementById('searchInput');
 
 const tableSearch = function() {
     const searchQuery = searchInput.value.toLowerCase().trim();
-    
-    const filteredData = data.filter((peak) => {
-        const match = peak.name.toLowerCase().includes(searchQuery);
-        return match;
-    });
+
+    const filteredData = data.filter((peak) => peak.name.toLowerCase().includes(searchQuery));
     populateTable(filteredData);
 };
 
