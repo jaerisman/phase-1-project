@@ -105,7 +105,7 @@ const tableSorter = function(){
     if (sortBy === "elevationDescending") {
         data.sort((a, b) => parseInt(b.elevation.replace(/,/, "")) - parseInt(a.elevation.replace(/,/, "")));
     } else if (sortBy === "elevationAscending") {
-        data.sort((a, b) => parseInt(a.elevation.replace(/,/, "")) - parseInt(b.elevation.replace(/,/g, "")));
+        data.sort((a, b) => parseInt(a.elevation.replace(/,/, "")) - parseInt(b.elevation.replace(/,/, "")));
     };
 
     data.sort((a, b) => {
